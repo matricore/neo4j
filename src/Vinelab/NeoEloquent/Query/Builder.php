@@ -16,7 +16,7 @@ class Builder extends IlluminateQueryBuilder {
      *
      * @var Vinelab\NeoEloquent\Connection
      */
-    protected $connection;
+    public $connection;
 
     /**
      * The database active client handler
@@ -44,7 +44,7 @@ class Builder extends IlluminateQueryBuilder {
      *
      * @var array
      */
-    protected $bindings = array(
+    public $bindings = array(
         'matches'=> [],
         'select' => [],
         'join'   => [],
@@ -58,7 +58,7 @@ class Builder extends IlluminateQueryBuilder {
 	 *
 	 * @var array
 	 */
-    protected $operators = array(
+    public $operators = array(
         '+', '-', '*', '/', '%', '^',    // Mathematical
         '=', '<>', '<', '>', '<=', '>=', // Comparison
         'is null', 'is not null',
